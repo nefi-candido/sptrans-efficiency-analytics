@@ -1,8 +1,8 @@
-# SPTrans Operational Efficiency Analytics 🚌📊
+# SPTrans Operational Efficiency Analytics 
 
 Análise macroscópica e de  performance da grade horária e frequências do sistema de transporte público de São Paulo (SPTrans), processada diretamente a partir de dados brutos de GTFS.
 
-## 🛠️ Arquitetura e Stack Técnica
+## Arquitetura e Stack Técnica
 
 O maior desafio deste projeto foi processar matrizes de frequência em nível de segundos sem sobrecarregar a memória local. A solução foi desenhada utilizando um pipeline de engenharia de dados:
 
@@ -10,7 +10,7 @@ O maior desafio deste projeto foi processar matrizes de frequência em nível de
 *   **Formato de Armazenamento:** Parquet (formato binário, colunar e auto-descritivo) eliminando problemas de encoding e delimitadores regionais (`.csv`), reduzindo o tamanho do arquivo final e garantindo a tipagem estrita dos dados para o consumo.
 *   **Camada de Business Intelligence:** Power BI para modelagem dimensional, cálculo de contexto via DAX e design de interface.
 
-## 🧮 Modelagem de Dados & Métricas DAX
+## Modelagem de Dados & Métricas DAX
 
 Para medir a eficiência e a elasticidade do sistema de transporte sem mascarar os dados por médias globais, foram desenvolvidas métricas baseadas em Pesquisa Operacional:
 
